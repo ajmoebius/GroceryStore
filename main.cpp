@@ -21,7 +21,7 @@ int main()
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
 
-  if(input=='A')
+  if(input=='A'||input=='a')
   {
     if(numItems<4)
     {
@@ -29,13 +29,14 @@ int main()
       cin>>newItem;
       list[numItems]=newItem;
       numItems++;
-      
+      /*
       index=0;
       while(index<=numItems)
       {
       cout<<list[index];
       index++;
       }
+      */
     }
     else
     {
@@ -44,6 +45,6 @@ int main()
     }
   }
 
-  }while(input!='Q');
+  }while(input!='Q'&& input!='q');
   return 0;
 }

@@ -41,7 +41,7 @@ int main()
     else
     {
       cout<<"You'll need a bigger list!"<<endl;
-      cout<<list;
+     
     }
   }
 

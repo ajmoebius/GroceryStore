@@ -24,7 +24,7 @@ int main()
   if(input=='A'||input=='a')
   {
     cout<<"What is the item?"<<endl;
-    if(numItems<4)
+    if(numItems<5)
     {
       cin>>newItem;
       list[numItems]=newItem;

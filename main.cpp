@@ -34,14 +34,16 @@ int main()
 
   }while(input!='Q'&& input!='q');
  
-  cout<<"==ITEMS TO BUY=="<<endl;
  
   if(!list.empty())
   {
+    
+    cout<<"==ITEMS TO BUY=="<<endl;
+    
     for(int index=0; index<list.size(); index++)
-      {
+    {
       cout<<index+1<<" "<<list[index]<<endl;
-      }
+    }
   }
   else
   {

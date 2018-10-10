@@ -18,11 +18,11 @@ int main()
   cout<<"\n==GROCERY LIST MANAGER==";
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
-  cout<<"\n (Q)uit";
   if(numItems > 0)
   {
     cout<<"\n (D)elete last item";
   }
+  cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
 

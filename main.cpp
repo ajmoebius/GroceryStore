@@ -18,7 +18,7 @@ int main()
   cout<<"\n==GROCERY LIST MANAGER==";
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
-  if(numItems > 0)
+  if(!list.empty())
   {
     cout<<"\n (D)elete last item";
   }

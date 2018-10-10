@@ -18,7 +18,7 @@ int main()
   cout<<"\n==GROCERY LIST MANAGER==";
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
-  if(!list.empty())
+  if(list.size() > 0)
   {
     cout<<"\n (D)elete last item";
   }
@@ -26,7 +26,7 @@ int main()
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
 
-    if(input == 'd' || input == 'D' && !list.empty())
+    if(input == 'd' && list.size() > 0 || input == 'D' && list.size() > 0)
     {
       cout<<list[list.size()-1]<<" was deleted from the list.\n";
       list.pop_back();

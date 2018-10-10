@@ -19,17 +19,26 @@ int main()
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
   cout<<"\n (Q)uit";
+  if(numItems > 0)
+  {
+    cout<<"\n (D)elete last item";
+  }
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
 
-    if(input=='A'||input=='a')
+    if(input == 'd' || input == 'D' && !list.empty())
+    {
+      cout<<list[list.size()-1]<<" was deleted from the list.\n";
+      list.pop_back();
+    }
+
+    else if(input=='A'||input=='a')
     {
       cout<<"What is the item?"<<endl;
       cin>>newItem;
       
       list.push_back(newItem);
       numItems++;
-    
     }
 
   }while(input!='Q'&& input!='q');
